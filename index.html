@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- 
+
+WELCOME USER! You've reached the source code for a manual created by STS. If you plan on updating or editing this manual, then you're in the right place!
+
+Before editing this manual, please read through the manual editing guide. It is important that we adhere strictly to this guide in order to maintain quality and consistency across all manuals.
+
+One final note. DO NOT touch the <head> portion of this document, unless specifically instructed to do so. It contains important metadata used to keep the manual functioning. Look for the comment tag that says "BEGIN MAIN CONTENT", and you may edit there.
+
+Good luck, and have fun!
+
+-->
+    <!-- page title -->
+
+    <head>
+
+        <!-- Manual title -->
+        <title>WordPress.com</title>
+        <meta charset="utf-8">
+        <meta name="description"
+            content="Software manual provided by Software Training for Students at the University of Wisconsin.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' id='uwmadison-fonts-css'
+            href='https://brand.wisc.edu/content/themes/uw-theme/dist/fonts/uw160/fonts.css?ver=1.1.1' type='text/css'
+            media='all' />
+        <link rel="stylesheet" type="text/css" href="../master-files/css/stylesheet.css">
+        <script src="../master-files/highlight.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="../master-files/smooth-scroll.js"></script>
+        <script src="../master-files/primary-functions.js"></script>
+        <script src="../master-files/ga.js"></script>
+    </head>
+
+
+<body>
+
+    <div class="about">
+        <div id="coverpage-title">
+            <h1>Wordpress 1</h1>
+            <h2>Building Websites with Wordpress</h2>
+                </div>
+        <div id="about-page"></div>
+        <div id="outline"></div>
+    </div>
+  
+    <!-- BEGIN MAIN CONTENT -->
+    <!-- Beginning of Introduction -->
+    </section>
+    <section class="topic">
+        <h1>Introduction</h1>
+        <p>Originally a designed as a blogging platform, Wordpress is now a full-featured Web Content Management System
+            (CMS). Popular among users ranging from individual bloggers to Fortune 500 companies, Wordpress is a free
+            software tool that can be used to create and manage basic websites with little or no coding knowledge. Since
+            Wordpress is Open Source, users with HTML, CSS and PHP coding knowledge can create highly complex,
+            customized websites by editing the underlying code.</p>
+        <h2>About this Class</h2>
+        <p>This manual provides a basic introduction to the Wordpress interface and explores commonly user features by
+            guiding students through the creation of a simple website.</p>
+        <p>During this class, students will:</p>
+        <ul>
+            <li>
+                <p>Become familiar with the Wordpress.com administration environment</p>
+            </li>
+            <li>
+                <p>Gain experience adding content, such as text, photos, and video to a Wordpress site</p>
+            </li>
+            <li>
+                <p>Gain experience configuring the layout of a Wordpress site</p>
+            </li>
+        </ul>
+        <h2>Prerequisites</h2>
+        <p>Basic computer operation skills (mouse, keyboard, file management)</p>
+        <h2>Other Requirements</h2>
+        <ul>
+            <li>
+                <p>An internet connection</p>
+            </li>
+            <li>
+                <p>A copy of the Wordpress 1 class files, available for download from the Software Training for Students
+                    website: <a href="http://wisc.edu/sts">http://wisc.edu/sts</a>. Browse to Free Technology Classes >
+                    Web-Based Applications > Wordpress 1. Files are located under the Manual and Files heading at right.
+                </p>
+            </li>
+        </ul>
+        <!-- End of Introduction -->
+        <!-- Beginning of Creating a WordPress Account -->
+    </section>
+    <section class="topic">
+        <h1>Creating an Account</h1>
+        <p>Before we can build a WordPress site, we first need to create a Wordpress.com account. In this section, we’ll
+            sign up for and activate a new WordPress account.</p>
+        <h2>Registering Your Account</h2>
+        <ol class="instruction-list">
+            <li>
+                <p>Open a web browser, such as Firefox, Chrome, or Internet Explorer and Navigate to <a
+                        href="http://wordpress.com/">http://wordpress.com/</a> </p>
+            </li>
+            <li>
+                <p>Click the "Start Your Website" button near the center of the screen</p>
+                <div class="centered-image-medium border"> <img
+                        src="images/registeringyouraccount-createwebsitebutton-1.png"> </div>
+            </li>
+            <li>
+                <p>Follow the provided instructions to complete the sign-up process. Choosing options that describe your
+                    desired site helps WordPress to suggest themes and designs that make sense for your project.</p>
+                <div class="sidebar-note">
+                    <h2>Want to change it up?</h2>
+                    <p>You can always change themes later on in the design process. In fact, you can change it whenever
+                        you please!</p>
+                </div>
+                <p>You are free to choose whatever suits your project, but <span class="highlight">some instructions
+                        will be specific to the theme we are using in this manual</span>. In this manual we will choose
+                    "Family, Home, &amp; Lifestyle", then "Travel", then "A welcome page for my site", then the <span
+                        class="highlight">"Motif" theme</span>.</p>
+            </li>
+            <li>
+                <p>Choose a domain. You can choose a custom domain (included in WordPress Premium), or a free
+                    &quot;.wordpress.com&quot; address.</p>
+                <p>If you’re unsure what to choose for your Blog Address, just use your name (lower case, no spaces -
+                    i.e. buckybadger) for now. You can always change it later. See <a
+                        href="http://en.support.wordpress.com/changing-blog-address/">http://
+                        en.support.wordpress.com/changing-blog-address/</a> for instructions.</p>
+            </li>
+            <li>
+                <p>Choose a plan for your account. The free plan perfectly fine for now, but you can always upgrade
+                    later if you choose.</p>
+            </li>
+            <li>
+                <p>Create your account by giving your email address. Be sure to use a real email address! You’ll need to
+                    check your email in order to activate your account.</p>
+            </li>
+            <li>
+                <p>Check your email for a confirmation message and click the link in it to confirm your account.</p>
+                <div class="centered-image-medium border"> <img src="images/registeringyouraccount-confirmemail-1.png">
+                </div>
+            </li>
+        </ol>
+        <h2>If You Already Have a WordPress Account</h2>
+        <ol class="instruction-list">
+            <li>
+                <p>Open a web browser, such as Firefox, Chrome, or Internet Explorer and Navigate to <a
+                        href="http://wordpress.com/">http://wordpress.com/</a> </p>
+            </li>
+            <li>
+                <p>Log in to your account</p>
+            </li>
+            <li>
+                <p>Click the My Sites tab at the top of the screen</p>
+            </li>
+            <li>
+                <p>Click "Add New Site"</p>
+                <div class="centered-image-large border"> <img
+                        src="images/ifyoualreadyhaveawordpressaccount-addnewsite-1.png"> </div>
+            </li>
+            <li>
+                <p>Follow the same instructions as above to create a new site by selecting a theme and domain.</p>
+            </li>
+        </ol>
+        <!-- End of Creating a WordPress Account -->
+        <!-- Beginning of Interface -->
+    </section>
+    <section class="topic">
+        <h1>Interface</h1>
+        <h2>The Navigation Bar</h2>
+        <div class="side-image-large border"> <img src="images/thenavigationmenu-navigationmenu-1.png"> </div>
+        <p>Appearing on the left side of your page when you click "My Site", the Navigation Bar is your primary control
+            point for managing your site. It has options to quickly add things like blog posts and pages, as well as
+            edit your site theme and settings.</p>
+        <h2>Navigating between your Blog and Dashboard</h2>
+        <p>Clicking the name of your site at the top of the Navigation Bar will bring up a quick preview of your site,
+            with options to view it as it would look on a computer, tablet, or phone. If you would like to actually open
+            your site you can right-click and choose "Open Link in New Tab".</p>
+        <!-- End of Interface -->
+        <!-- Beginning of Stats -->
+    </section>
+    <section class="topic">
+        <h1>Stats</h1>
+        <p>If you are interested in how many visits your site gets and want to gain some insight into which posts and
+            pages are most popular, visit your Stats page! Your stats page includes graphs, charts, and lists that
+            provide viewer traffic details.</p>
+        <p>The following are <b>not</b> reflected in your stats:</p>
+        <ul>
+            <li>
+                <p>Visits to uploaded documents and files</p>
+            </li>
+            <li>
+                <p>Visits from browsers that do not execute JavaScript or load images</p>
+            </li>
+            <li>
+                <p>GoogleBot and other search engine spiders</p>
+            </li>
+            <li>
+                <p>Your own visits to your blog (for logged-in users of public blogs only)</p>
+            </li>
+        </ul>
+        <h2>Insights</h2>
+        <p>The Insights tab shows information about your posting activity, such as when and how frequently you post. It
+            also displays information about your most recent post, as well as the number of Views, Visitors, Likes, and
+            Comments you've received on your site.</p>
+        <div class="centered-image-large border"> <img src="images/insights-todaysstats-1.png"> </div>
+        <p>This information can also be broken down into specific days, weeks, months, and years by clicking the
+            corresponding tabs. This may be useful for finding correlations between the popularity of your posts and the
+            date and time they were posted, among other factors.</p>
+        <!-- End of Stats -->
+        <!-- Beginning of Publish -->
+    </section>
+    <section class="topic">
+        <h1>Publish</h1>
+        <p>In this section we will discuss the various ways and types of content to add to your site.</p>
+        <h2>Blog Posts</h2>
+        <p>Wordpress allows you to add two types of content to your site: Pages and Posts. Posts are chunks of content
+            that are displayed, by default, in reverse chronological order on your home page, although they can be
+            displayed on another page in your site instead. Posts make up the blog portion of a Wordpress website.</p>
+        <p>If you chose to have a welcome page for your site like our example, your blog posts will be on a separate
+            blog page.</p>
+        <h3>Creating New Posts</h3>
+        <p>Adding a new post to your blog is very simple.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>In the Navigation Bar on the left, underneath Site, click on Posts. On the Posts screen, click on Add
+                    New Post.</p>
+                <div class="centered-image-medium border"> <img src="images/add_new_post.png"
+                        alt="The Add New Post button"> </div>
+            </li>
+            <li>
+                <p>In the field at the top where it says "Title", type a title for your blog post. You may use text from
+                    the muffin_recipe.txt file found in the class files to complete your blog post.</p>
+                <div class="centered-image-large border"> <img src="images/creatingnewposts_title.png"
+                        alt="The layout of the editing screen for creating a new blog post. Add Title is at the top of the screen and then you can add blocks underneath">
+                </div>
+            </li>
+            <li>
+                <p>You can either start typing text into the editor or add a new block.</p>
+                <p>To add a new block, which is just a chunk of specialized content in your post, click on the little
+                    plus symbol on the left.</p>
+                <div class="centered-image-large border"> <img src="images/creatingnewposts-block.png"
+                        alt="Expansion of clicking the plus button showing the most recently used blocks."> </div>
+                <p>Clicking on the heading block will insert that block in your post. The size of the headings are H2
+                    through H6 with H2 being the largest heading and H6 being the smallest.</p>
+                <p>Select the "H2" heading and type "Ingredients".</p>
+                <div class="centered-image-large border"> <img src="images/creatingnewposts-heading.png"
+                        alt="Banana Chocolate Chip Muffins Recipe as the title of the post and Ingredients as heading.">
+                </div>
+            </li>
+            <li>
+                <p>Similarly to how you added a Heading block, add a Paragraph block. Fill this block with the
+                    ingredients text.</p>
+                <div class="centered-image-large border"> <img src="images/creatingnewposts-paragraph2.png"
+                        alt="Same layout as above except with the recipe text added in a new paragraph block."> </div>
+                <p>You can edit the font type, font color, foreground color, and background color in the Block tab on
+                    the right side of the editing screen.</p>
+                <div class="centered-image-large border"> <img src="images/creatingnewposts-editblock.png"
+                        alt="Block tab on the right side of the editing screen."> </div>
+                <p>Repeat adding heading and blocks for the instructions of the recipe.</p>
+                <div class="centered-image-large border"> <img src="images/creatingnewposts-paragraph.png"
+                        alt="Adding the instructions heading and paragraph."> </div>
+            </li>
+            <li>
+                <p>You may want to remove a block. Simply click on the block, click on the three dots on the side of the
+                    block, and click Remove block.</p>
+                <div class="centered-image-large border"> <img src="images/creatingnewposts-remove.png"
+                        alt="Removing a block by clicking on the three dots in the block."> </div>
+            </li>
+            <li>
+                <p>You also may want to reorganize your blocks. To shift blocks up or down, click on the Move Up or Move
+                    Down arrows on the left side of the block.</p>
+                <div class="centered-image-large border"> <img src="images/creatingnewposts-shift.png"
+                        alt="Shift up and shift down arrows on the left side of the block."> </div>
+        </ol>
+        <h3>Tagging and Categorizing</h3>
+        <p>Tags and Categories allow you to group your posts together in order to make it easier for your visitors to
+            find related content on your site. Tags and Categories are very similar, however, Tags are typically much
+            more specific than Categories. Also, Categories can be structured in a hierarchy, while Tags cannot. </p>
+        <p>It is common to add many tags to a post in order to describe all the topics that the post discusses, but only
+            one or two categories, which describe the overall topic of the post.</p>
+        <p>For example, a post about frogs might be categorized under "Frogs", but tagged with the terms "tadpole",
+            "amphibian", "poison dart frog", "tree frog", and "American dart frog".</p>
+        <p>In this exercise, we will add several tags to the post that we created in the previous exercise.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>Click on the "Categories &amp; Tags" section in the Navigation Bar</p>
+                <div class="centered-image-large border"> <img src="images/taggingandcategorizing-navigationbar-1.png">
+                </div>
+            </li>
+            <li>
+                <p>To tag a post, type a word into the Tags box. You can enter multiple terms at once by separating the
+                    terms with a comma. WordPress will automatically split your tags up when you type a comma.</p>
+                <div class="centered-image-large border"> <img src="images/taggingandcategorizing-tags-1.png"> </div>
+            </li>
+            <li>
+                <p>To delete a tag, Click on the small “x” next it.</p>
+            </li>
+        </ol>
+        <p>Categories can also be easily added to keep track of your posts. Let's add some categories to our new post.
+        </p>
+        <ol class="instruction-list">
+            <li>
+                <p>To Categorize a post you must first create a Category. Click under Categories where it says "Add a
+                    New Category".</p>
+            </li>
+            <li>
+                <p>Give your new category a name. Recall that Categories can be hierarchical. You can choose to give it
+                    a parent category if you like, or you can choose to make it a top level category.</p>
+                <div class="centered-image-medium border"> <img
+                        src="images/taggingandcategorizing-addanewcategory-1.png"> </div>
+            </li>
+            <li>
+                <p>Click the blue "Add" button to add your new category. In addition to being attached to the current
+                    post, categories are added to your category library and can be used again on other posts.</p>
+            </li>
+            <li>
+                <p>Uncheck the "Uncategorized" category now that we have assigned a category (or several) to this post.
+                    By default, WordPress adds the "Uncategorized" category to new posts.</p>
+                <div class="centered-image-large border"> <img src="images/taggingandcategorizing-uncategorized-1.png">
+                </div>
+            </li>
+        </ol>
+        <h3>Adding Media</h3>
+        <p>A WordPress site with nothing but text can get relatively boring. In order to add interest to posts and
+            pages, Wordpress allows you to embed images, videos, and audio files into your posts and pages.</p>
+        <p>Images are the simplest way to add interest to your posts and pages. In this exercise we’ll add a single
+            image to the post we created in the previous section. Note that, although we’re working with a Post in this
+            exercise, the process for adding images is the same for Pages.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>Add an image block.</p>
+                <!-- <div class="centered-image-large border"> <a href="https://cl.ly/325e8db5f701" target="_blank"><img src="https://dj1gbnpej5rmb.cloudfront.net/items/1M1S0s182b2s3k2l1f0W/Screen%20Recording%202019-04-28%20at%2008.14%20PM.gif" style="display: block;height: auto;width: 100%;"/></a> </div> -->
+                <div class="sidebar-note">
+                    <h2>Uploading Files</h2>
+                    <p>It is important to note that the Free Plan allows a maximum of 3GB of uploads.</p>
+                </div>
+                <p>We can upload a new image or select a previously uploaded image from our Media Library. Within the
+                    media manager you can select a specific type of file via the bar along the top. The "Twenty Eleven"
+                    theme has two default images, but we will upload a new image of our own.</p>
+                <div class="centered-image-large border"> <img src="images/creatingnewposts-image2.png"> </div>
+            </li>
+            <li>
+                <p>Click the "Upload" button.</p>
+            </li>
+            <li>
+                <p>Navigate to the location where you downloaded the class files and select "muffins.jpg" then click
+                    "Open" to choose it.</p>
+            </li>
+            <li>
+                <p>The muffins image should now be highlighted in blue. Click the blue "Insert" button to add it to your
+                    post.</p>
+            </li>
+            <li>
+                <p>To edit the image settings, click on the image in the editor. Alignment of the image can be switched
+                    by the buttons on the left side. A caption can be added by typing under the image.</p>
+                <div class="centered-image-large border"> <img src="images/creatingnewposts-image3.png"> </div>
+            </li>
+            <li>
+                <p>Resize the image by clicking and dragging the two blue circles on the right side of the image.</p>
+                <!-- <a href="https://cl.ly/bcdb0285bcc3" target="_blank"><img src="https://dj1gbnpej5rmb.cloudfront.net/items/2p1C0V0F2c1E0w350B2Y/Screen%20Recording%202019-04-28%20at%2008.51%20PM.gif" style="display: block;height: auto;width: 100%;"/></a> -->
+            </li>
+        </ol>
+        <h3>Adding by URL</h3>
+        <p>Images can also be added by URL if you want to use an image someone else has hosted, rather than from your
+            own computer.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>Again, add an image block, but this time click on "Insert From URL".</p>
+            </li>
+            <li>
+                <p>Paste the URL of the desired image into address bar, then click the blue "Upload" button to the
+                    right.</p>
+                <div class="centered-image-large border"> <img src="images/addingbyurl-addressbar-1.png"> </div>
+            </li>
+            <li>
+                <p>The image you uploaded should now be highlighted in blue. Click the blue "Insert" button to add it to
+                    your post.</p>
+            </li>
+        </ol>
+        <h3>Video and Audio Embedding</h3>
+        <p>In addition to images, other types of media, such as audio and video, can also be embedded into posts and
+            pages.</p>
+        <p>In the following exercise we'll embed a SoundCloud audio file into a page.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>Navigate to <a href="https://soundcloud.com/">https://soundcloud.com/</a> and search for an audio
+                    track by typing some text into the search box.</p>
+            </li>
+            <li>
+                <p>Locate an interesting track in the search results and copy its URL.</p>
+            </li>
+            <li>
+                <p>Click on add a block and expand the Embeds tab. Click on the SoundCloud block.</p>
+                <div class="centered-image-large border"> <img src="images/embedding-soundcloud.png"> </div>
+            </li>
+            <li>
+                <p>Paste the copied URL into the block and click embed.</p>
+                <div class="centered-image-large border"> <img src="images/embedding-soundcloud2.png"> </div>
+            </li>
+        </ol>
+        <h3>JetPack Documentation</h3>
+        <p>Embedding is made simple to WordPress users by a suite of plugins called Jetpack. You can embed a variety of
+            media- just scroll through the Embed blocks to look at some of the options.</p>
+        <p>In order to access the Jetpack documentation, simply navigate to <a href="jetpack.me">jetpack.me</a> in a web
+            browser.</p>
+        <div class="centered-image-large border"> <img src="images/jetpackdocumentation-jetpack-1.png"> </div>
+        <h3>Preview and Publish</h3>
+        <p>Now that we finally have an interesting page loaded with content, let's get ready to show it to the world.
+        </p>
+        <p>First, we will Preview our post to make sure it looks satisfactory.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>From the Post editing page that we were on, click the gray "Preview" button in the left Navigation
+                    Bar.</p>
+                <div class="centered-image-large border"> <img src="images/previewandpublish-buttons-1.png"> </div>
+            </li>
+            <li>
+                <p>In the window that pops up you can see a preview of your post. Try clicking the icons to see how it
+                    would appear on a computer versus a tablet versus a phone. The "X" on the left will close the
+                    preview.</p>
+                <div class="centered-image-large border"> <img src="images/previewandpublish-screens-1.png"> </div>
+            </li>
+            <div class="sidebar-note">
+                <h2>Publish Later?</h2>
+                <p>If you're done creating your post but aren't ready to have it on your site just yet you can schedule
+                    it to be posted at a later date (or backdated) by clicking on the calendar icon on the right of the
+                    "Publish" button.</p>
+            </div>
+            <li>
+                <p>When you are satisfied with the way it appears, click the blue "Publish" button.</p>
+            </li>
+            <li>
+                <p>If the post was successfully published you will see a green banner across the top of the post. Click
+                    "View Post" to see the post on your site.</p>
+                <div class="centered-image-large border"> <img src="images/previewandpublish-postpublished-1.png">
+                </div>
+            </li>
+        </ol>
+        <h2>Pages</h2>
+        <p>Wordpress allows you to add two types of content to your site: pages and posts. Pages are usually used for
+            content that doesn't change much, like your contact or information "about me" information. In this section,
+            we'll learn to create, edit, and delete pages.</p>
+        <h3>Creating New Pages</h3>
+        <p>In this exercise, we’ll create a new Wordpress page.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>In the Navigation Bar on the far left, click Pages. This will display a list of all the pages
+                    currently included in your site.</p>
+                <div class="centered-image-large border"> <img src="images/creatingnewpages-listofpages-1.png"> </div>
+                <p>The Posts we've already made can be found on the Blog page.</p>
+            </li>
+            <li>
+                <p>Click the "Add" button to the right of Pages.</p>
+                <div class="centered-image-large border"> <img src="images/creatingnewpages-pagesbutton-1.png"> </div>
+                <p>The basic layout WordPress provides looks a lot like a new Post! This is very convenient because all
+                    the things we have learned about Posts also apply to Pages.</p>
+            </li>
+            <li>
+                <p>Go ahead and give your new Page a title. We'll call ours "Gallery" because we will make an image
+                    gallery page in this example.</p>
+            </li>
+        </ol>
+        <h3>Adding a Gallery</h3>
+        <ol class="instruction-list">
+            <li>
+                <p>Add a Gallery block.</p>
+                <div class="centered-image-large border"> <img src="images/creatingnewpages-galleryblock.png"> </div>
+            </li>
+            <li>
+                <p>Click the "Upload" button and navigate to your class-files folder again.</p>
+            </li>
+            <li>
+                <p>Upload "gallery1.jpg", "gallery2.jpg", "gallery3.jpg", and "gallery4.jpg" to WordPress.</p>
+            </li>
+            <li>
+                <p>Your gallery should look like a random assortment of photos.</p>
+                <div class="centered-image-large border"> <img src="images/creatingnewpages-gallerylayout.png"> </div>
+            </li>
+            <li>
+                <p>You can change the layout of your gallery by clicking on the block type button and choosing between
+                    "Image","Slideshow", and "Tiled Gallery".</p>
+                <div class="centered-image-large border"> <img src="images/creatingnewpages-galleryoptions.png"> </div>
+            </li>
+            <li>
+                <p>If you choose "Tiled Gallery", you can change the number of columns in the gallery in the block
+                    settings tab.</p>
+                <div class="centered-image-large border"> <img src="images/creatingnewpages-gallerycolumns.png"> </div>
+            </li>
+        </ol>
+        <h3>Page Attributes</h3>
+        <p>When you are creating your site you have some control over which pages are top-level and which are children.
+        </p>
+        <ol class="instruction-list">
+            <li>
+                <p>Click on the "Page Attributes" button on the left in the Navigation Bar.</p>
+            </li>
+            <li>
+                <p>You now have the option to toggle "Top Level" page on and off, as well as select the parent of the
+                    page you are editing.</p>
+                <div class="centered-image-large border"> <img src="images/pageattributes-pageattributes-1.png"> </div>
+            </li>
+        </ol>
+        <h3>Ready to Publish</h3>
+        <p>When you are ready to Preview or Publish your page, the process is the same as for Blog Posts. Refer back to
+            that section if you need help. (Hint: the Preview and Publish buttons are on the upper left side!)</p>
+        <h3>Editing Existing Pages</h3>
+        <p>In addition to adding new Pages, we can also edit existing ones. For practice, we will edit the Contact and
+            Home Pages. Before we begin, find your way back to the Pages list.</p>
+        <p><b>Adding a Contact Form</b></p>
+        <p>Wordpress offers a handy built-in feature that allows you to easily place a contact form on any page. When a
+            visitor fills in a contact form, the content of the form is sent via email to the admin address for the
+            site. In this exercise, we’ll add a form to the Contact page.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>Click on "Contact" to take you to the editing layout for the Contact page.</p>
+            </li>
+            <li>
+                <p>Click on the form section to highlight it and bring up the "Edit" and "Remove" options.</p>
+                <div class="centered-image-large border"> <img src="images/addingacontactform-highlight-1.png"> </div>
+            </li>
+            <li>
+                <p>Click the "Edit" option to bring up the Editing window. You will see the four default Form Fields.
+                </p>
+                <div class="centered-image-medium border"> <img src="images/addingacontactform-defaultfields-1.png">
+                </div>
+            </li>
+            <li>
+                <p>We can Edit or Remove these existing fields. Click the "Edit" button (the pencil) for the Name field
+                    on the far right.</p>
+            </li>
+            <li>
+                <p>You can change the name of the Field by typing in the box for "Field Label". You can also choose
+                    whether the Field is required to submit the Form or not by checking the box next to "Required". We
+                    will explore "Field Type" in a moment.</p>
+                <p>Click the "Edit" button again when you are done.</p>
+                <div class="centered-image-medium border"> <img src="images/addingacontactform-namefield-1.png"> </div>
+            </li>
+            <li>
+                <p>Now let's try deleting a Field. Click "Remove Field" (the trashcan) next to the Website Field.</p>
+            </li>
+            <li>
+                <p>Finally let's add our own field. Click the "Add New Field" button in the lower left.</p>
+            </li>
+            <li>
+                <p>New Fields default to a Label and Type of "Text" and not required. Give your Field the Label "How's
+                    the site look?" and change the Type to "Radio Button". For the Radio Button options enter "Lame",
+                    "Decent", and "Awesome", making sure to press enter after each option.</p>
+                <div class="centered-image-medium border"> <img src="images/addingacontactform-radiobutton-1.png">
+                </div>
+            </li>
+            <li>
+                <p>Make it Required and click the blue "Update" button. This will update the contact form on our Contact
+                    page.</p>
+            </li>
+            <li>
+                <p>Finally, click the blue "Update" button on the top left to Update the Contact page itself.</p>
+            </li>
+        </ol>
+        <p><b>Editing Our Home Page</b></p>
+        <p>As the first thing visitors to the site will see, we want to make sure the Home Page looks nice. We'll do a
+            little editing to help customize it for our site.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>Navigate to the Pages list again, and click on the Home Page to edit it.</p>
+            </li>
+            <li>
+                <p>First, replace the default welcome text in the Editor with something a little more personalized.</p>
+            </li>
+            <li>
+                <p>Next, click on Featured Image in the Navigation Bar. As you can see, the theme we chose (Motif)
+                    includes a default featured image.</p>
+            </li>
+            <li>
+                <p>Click the "Edit" button (the pencil) in the lower right corner of the picture to choose another
+                    picture. This will open up the Media Gallery again.</p>
+            </li>
+            <li>
+                <p>Click the blue "Add New" button and upload "header.jpg" from the class-files folder. When completed,
+                    click the blue "Set Featured Image" button in the lower right to replace the old image with our
+                    customized one.</p>
+                <div class="centered-image-large border"> <img src="images/editingourhomepage-headerimage-1.png"> </div>
+            </li>
+            <li>
+                <p>Finally, click the blue "Update" button in the top left to update our Home Page.</p>
+            </li>
+        </ol>
+        <p>A new header and welcome message are a good start, but if you want some real control over how your site
+            appears then jump into the next section of the manual.</p>
+        <!-- End of Publish -->
+        <!-- Beginning of Personalize -->
+    </section>
+    <section class="topic">
+        <h1>Personalize</h1>
+        <p>In Wordpress, a theme is a collection of files that determine all the design aspects of your site. Your
+            site's layout, colors and fonts are all controlled by your theme. New Wordpress sites automatically use a
+            default theme supplied by Wordpress, but there are many free and paid themes to choose from.</p>
+        <h2>Viewing the Current Theme</h2>
+        <p>In this exercise we will find some information about our current theme.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>In the Navigation Bar on the left, find the "Themes" button in the "Personalize" section and click on
+                    it. We will check out the "Customize" option later, so leave that alone for now.</p>
+                <div class="centered-image-large border"> <img src="images/viewingthecurrenttheme-themebutton-1.png">
+                </div>
+            </li>
+            <li>
+                <p>At the top of the page it shows the name of our current theme "Motif". On the far right side of the
+                    same bar, click on "Info" to get more information about the current theme.</p>
+                <div class="centered-image-large border"> <img src="images/viewingthecurrenttheme-infobutton-1.png">
+                </div>
+            </li>
+            <li>
+                <p>You should now be looking at a page with more details and a walk-through of your theme's layout.</p>
+                <div class="centered-image-medium border"> <img src="images/viewingthecurrenttheme-themeinfopage-1.png">
+                </div>
+            </li>
+        </ol>
+        <p>From this page you have the option to open a live demo of the theme, as well as get support for more
+            customization of the theme. When you are done reading about your theme click back to "All Themes".</p>
+        <h2>Searching for a New Theme</h2>
+        <p>If you would like to change to a different theme, WordPress makes it very easy and is able to transfer all
+            your information to the new theme for you. Wordpress offers a wide variety of themes, with different
+            layouts, colors, fonts and graphics. In this exercise, we'll explore the Wordpress theme offerings using the
+            search filter.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>Below where it displays the name of the current theme (that we located in the previous exercise)
+                    there is a search bar. Find the drop-down menu on the right side of the search bar and choose to
+                    search either "Free", "Premium", or "All" themes.</p>
+                <div class="centered-image-large border"> <img src="images/searchingforanewtheme-searchbar-1.png">
+                </div>
+            </li>
+            <li>
+                <p>You'll notice that it is now displaying and suggesting free themes (if you selected "Free" of
+                    course). Try putting in a particular search term, such as "art".</p>
+            </li>
+            <li>
+                <p>Hover over a theme that looks interesting and click on the "Info" button to learn more about that
+                    theme.</p>
+            </li>
+            <li>
+                <p>On the theme info page, click on "Open Live Demo" on the top right.</p>
+                <div class="centered-image-large border"> <img
+                        src="images/searchingforanewtheme-openlivedemobutton-1.png"> </div>
+            </li>
+            <li>
+                <p>You now have the ability to click "Try &amp; Customize" to preview the change, or "Activate This
+                    Design" to go ahead and apply the new theme.</p>
+                <div class="centered-image-large border"> <img src="images/searchingforanewtheme-activatebutton-1.png">
+                </div>
+            </li>
+        </ol>
+        <p>For now, this manual will stick with the "Motif" theme, but again, you are welcome to choose any theme you
+            like for your personal site.</p>
+        <h2>Customizing Your Theme</h2>
+        <p>You have some control over the look of your site even within a single theme. In this exercise we will learn
+            how to customize our chosen theme.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>Navigate back to the themes page that we started from in the other exercises.</p>
+                <p>In the top bar, next to the "Info" button we clicked earlier you will find the "Customize" button.
+                    Click it.</p>
+            </li>
+            <li>
+                <p>You will now see your home page, with a new Customization Bar on the left side. "Custom Design" is
+                    part of the Premium package and allows you to choose fonts, color palettes, and customize CSS for
+                    your site. We will ignore this for now. Instead, click on "Site Identity".</p>
+                <div class="centered-image-medium border"> <img
+                        src="images/customizingyourtheme-customizationbar-1.png"> </div>
+                <p>Give your site a new Title and Tagline to help build your personal brand. Click back to the
+                    Customization Bar when you are done (your changes will be preserved).</p>
+                <div class="centered-image-medium border"> <img src="images/customizingyourtheme-siteidentity-1.png">
+                </div>
+            </li>
+            <li>
+                <p>Click on "Colors &amp; Backgrounds". Here you can choose a background color and color palette that
+                    you like for your site. Click back to the Customization Bar when you are done.</p>
+                <div class="centered-image-medium border"> <img src="images/customizingyourtheme-backgroundcolor-1.png">
+                </div>
+            </li>
+            <li>
+                <p>Next, click on "Fonts". You can set the font for your headings, as well as your base font from this
+                    menu. Click back to the Customization Bar when you are done.</p>
+            </li>
+            <li>
+                <p>Next is the "Header Image". WordPress provides a few default header options but allows you to upload
+                    your own as well. A file with dimensions 320 by 110 pixels is recommended, but not required. Click
+                    back to the Customization Bar when you are done.</p>
+            </li>
+            <li>
+                <p>Click on "Menus" in the Customization Bar. You can choose "Menu Locations" to choose where the
+                    navigation menu appears. Below that we see the primary, default menu, named "Primary".</p>
+                <div class="centered-image-medium border"> <img src="images/customizingyourtheme-menus-1.png"> </div>
+                <p>Click on "Primary" to edit this menu. In this bar you can rename and reorder this menu, as well as
+                    choose the locations that it appears. You also have the option to automatically add new top-level
+                    pages to this menu, which is a convenient feature. Try dragging the order of the pages around like
+                    in this example (Blog was moved up to second in the menu). Click back to the Customization Bar when
+                    you are done.</p>
+                <div class="centered-image-medium border"> <img src="images/customizingyourtheme-primarymenu-1.png">
+                </div>
+            </li>
+            <li>
+                <p>Next, click on "Widgets". You will be presented with a list of the places on your site where your
+                    chosen theme supports widgets. Widgets are small pieces of your site that WordPress implements for
+                    you, such as Text, Navigation, and Contact information.</p>
+                <div class="centered-image-medium border"> <img src="images/customizingyourtheme-widgets-1.png"> </div>
+                <p>Click into the First Footer Sidebar for example. This is currently filled with a Contact Info widget,
+                    which we can edit, or delete and add another widget. Click back to the Customization Bar when you
+                    are done.</p>
+                <div class="centered-image-medium border"> <img src="images/customizingyourtheme-contactinfo-1.png">
+                </div>
+            </li>
+            <li>
+                <p>Clicking on "Static Front Page" allows you to modify the choices we made right when we first created
+                    our site with regards to what kind of landing page your site has. Change this setting if you like.
+                    Click back to the Customization Bar when you are done.</p>
+            </li>
+            <li>
+                <p>The final customization option is "Testimonials" which allows you to set up how you want your
+                    Testimonials page to appear, if you choose to have one. Click back to the Customization Bar when you
+                    are done.</p>
+            </li>
+        </ol>
+        <p>You also have the ability to directly customize aspects of your site by clicking the blue edit buttons in the
+            live preview when you're in Customization view.</p>
+        <!-- End of Personalize -->
+        <!-- Beginning of Configure -->
+    </section>
+    <section class="topic">
+        <h1>Configure</h1>
+        <p>The "Configure" section of the Navigation Bar contains several sections to tweak the interactivity of your
+            site, such as sharing capabilities, the people who have the access to your site, and some general site
+            settings.</p>
+        <h2>Sharing</h2>
+        <p>The Sharing tab takes you to the options to connect other social media sites to your website, which enables
+            you to quickly and easily share your posts across the web.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>Click on the Sharing tab in the Navigation Bar.</p>
+                <div class="centered-image-large border"> <img src="images/sharing-sharingtab-1.png"> </div>
+            </li>
+            <li>
+                <p>The top portion of the "Connections" page allows you to publicize your posts on a variety of social
+                    media services. If you have an account you would like to attach to your site, click the
+                    corresponding blue "Connect" button on the right side of the page.</p>
+                <div class="centered-image-medium border"> <img src="images/sharing-publicizeyourposts-1.png"> </div>
+            </li>
+            <li>
+                <p>Click the "Sharing Buttons" tab at the top of the page next to "Connections".</p>
+                <div class="centered-image-medium border"> <img src="images/sharing-sharingbuttons-1.png"> </div>
+            </li>
+            <li>
+                <p>Click the "Edit label text" button and change the text to "Share Now:", then click close when you are
+                    done. You will be able to see the Preview update in real-time as you make changes. Click "Close"
+                    when you are done.</p>
+                <div class="centered-image-medium border"> <img src="images/sharing-labeltext-1.png"> </div>
+            </li>
+            <li>
+                <p>Click "Edit sharing buttons" below the Preview. You are able to choose which sharing buttons will be
+                    available by simply clicking them. They will then appear in the Preview. Choose to add "Print" and
+                    "LinkedIn" for now.</p>
+                <div class="centered-image-medium border"> <img src="images/sharing-visiblebuttons-1.png"> </div>
+            </li>
+            <li>
+                <p>Clicking the "Reorder" button toggles you back and forth between reordering and adding/removing
+                    buttons for sharing. Drag "Press This" for WordPress to the back of the order for now. Click "Close"
+                    when you are done.</p>
+                <div class="centered-image-medium border"> <img src="images/sharing-reorder-1.png"> </div>
+            </li>
+            <li>
+                <p>Clicking the "Add "More" button" allows you to hide certain sharing buttons behind a "More" button.
+                    This is useful for keeping your site cleaner and more aesthetically pleasing. You can also reorder
+                    these in the same manner as the other buttons. Hide "Reddit", "Tumblr", and "Pinterest" behind the
+                    "More" button for now. Click "Close" when you are done.</p>
+            </li>
+            <li>
+                <p>You can also choose a "Button Style" for sharing on your site. Choose "Official Buttons" for the
+                    tutorial. When you are done be sure to click the blue "Save Changes" button to save all the sharing
+                    options we have selected.</p>
+                <div class="centered-image-medium border"> <img src="images/sharing-buttonstyle-1.png"> </div>
+            </li>
+            <li>
+                <p>In the "Options" section lower on the page you can choose where to display the option to share your
+                    site. Choose to also include sharing on "Media". Be sure to click the blue "Save Changes" button
+                    when you are happy with the chosen Options.</p>
+                <div class="centered-image-medium border"> <img src="images/sharing-options-1.png"> </div>
+                <p>You can also choose whether to include comment likes on all posts or not. By adding your Twitter
+                    username in the box you will be mentioned every time someone uses the Share via Twitter button on
+                    your site. This is useful for keeping track of the sharing of your site, as well as letting people
+                    identify you as the creator of the site, if that is something you want.</p>
+            </li>
+        </ol>
+        <h2>People</h2>
+        <p>In the People tab you have the ability to add other users to your team so that they can post content and
+            manage aspects of your site if you would like. This is a more advanced capability that would typically be
+            used if you site grows quite large.</p>
+        <h2>Plugins</h2>
+        <p>Plugins are optional pieces of software that help you keep a finger on the pulse of your site. Different
+            levels of WordPress plans come with different plugins available. By default the free plan has them all
+            enabled but you can choose which you like, or upgrade to gain access to more advanced options.</p>
+        <h2>Domains</h2>
+        <p>The free plan gives you a domain name that includes ".wordpress" but you have the option to upgrade plans
+            which will remove it. You can also purchase additional domains that can redirect to your site from this
+            menu. We won't worry about these options in this tutorial as we are focusing on the free version.</p>
+        <h2>Settings</h2>
+        <p>The Settings tab gives you very granular control of your website.</p>
+        <ol class="instruction-list">
+            <li>
+                <p>In the General tab you can change your site's Title and Tagline (we already did this in a previous
+                    step, too). You can also change the language of your site, as well as the timezone. Change the
+                    timezone to your current timezone. Hit the blue "Save Settings" button when you are done.</p>
+                <div class="centered-image-medium border"> <img src="images/settings-timezone-1.png"> </div>
+                <p>Also in the General tab you can change the visibility of your site to users and search engines in the
+                    Privacy section.</p>
+                <p>Finally, at the bottom of the page you have three options:</p>
+                <ul>
+                    <li>
+                        <p>Change Site Address: this will allow you to choose a new domain name.</p>
+                    </li>
+                    <li>
+                        <p>Start Over: This will allow you a fresh start on your site by deleting the content but
+                            preserving your site.</p>
+                    </li>
+                    <li>
+                        <p>Delete Site: This is the nuclear option. Your site will be gone forever and cannot be
+                            restored. Use caution when deciding whether or not to use this option.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>In the Writing tab you can choose some aspects of how content created on your site, such as default
+                    post categories and formats. You can also add an option to "Press This" in your bookmarks bar. This
+                    will allow you to quickly and easily add content from another site to your own site. (Don't forget
+                    to click the blue "Save Settings" button when you are finished!)</p>
+                <div class="centered-image-medium border"> <img src="images/settings-writingdefaults-1.png"> <img
+                        src="images/settings-writingpressthis-1.png"> </div>
+            </li>
+            <li>
+                <p>The Discussion tab provides many options to structure and track comments on your posts and site. You
+                    can tailor your notifications to your liking here as well.</p>
+            </li>
+            <li>
+                <p>Advanced data is available in the Analytics tab if you have the WordPress Business plan upgrade.</p>
+            </li>
+            <li>
+                <p>On the SEO tab you can provide a short description of your site to display in search engine results
+                    and make it more likely for people to find your site. Save your Settings when you are finished!</p>
+                <div class="centered-image-medium border"> <img src="images/settings-seo-1.png"> </div>
+            </li>
+            <li>
+                <p>The Import tab provides a method of bringing content in from other sources to be part of your site.
+                    This can be very useful if you have another WordPress site that you would like to merge with yours.
+                    WordPress also offers options for other sources as well.</p>
+            </li>
+            <li>
+                <p>The Export tab lets you transfer content from your site such as pages or posts to other locations.
+                    You have the option to choose to export your entire site or just specific types of content of your
+                    choosing.</p>
+            </li>
+        </ol>
+        <!-- End of Configure -->
+        <!-- Beginning of Conclusion -->
+    </section>
+    <section class="topic">
+        <h1>Conclusion</h1>
+        <p>Thank you for taking WordPress 1! You have now been given an overview of many of the most useful features of
+            WordPress.com and can create your own blog and website through the WordPress platform. If you would like to
+            fully utilize the power of Wordpress, you should take our classes on HTML, CSS, and JavaScript. If you are
+            interested in learning to host your own website with these skills, WordPress.org (<a
+                href="https://wordpress.org/">https://wordpress.org/</a>) is a widely used platform that you should
+            check out. For one-on-one help with this process, we encourage you to set up an Ask-A-Trainer appointment
+            with one of our specialists through our website (<a
+                href="https://sts.doit.wisc.edu/">https://sts.doit.wisc.edu/</a>)</p>
+        <!-- END MAIN CONTENT -->
+</body>
+
+</html>
